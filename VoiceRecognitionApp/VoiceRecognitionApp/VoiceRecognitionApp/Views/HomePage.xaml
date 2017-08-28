@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VoiceRecognitionApp.Views.HomePage"
+             Title="Voice Recognition System">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin Forms!" />
+            <Editor x:Name="convertedText" Text="The text will show up here.">
+                <Editor.BackgroundColor>
+                    <!--<OnPlatform x:TypeArguments="x:Color"
+                                iOS="#a4eaff"
+                                Android="#2c3e50"/>-->
+                </Editor.BackgroundColor>
+            </Editor>
+            <Button x:Name="startVoiceButton" Text="Record" IsVisible="true" Clicked="OnStart"/>
+            <Button x:Name="endVoiceButton" Text="Stop" IsVisible="true" Clicked="OnStop"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

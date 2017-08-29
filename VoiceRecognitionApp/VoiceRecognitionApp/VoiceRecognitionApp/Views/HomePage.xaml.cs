@@ -15,12 +15,12 @@ namespace VoiceRecognitionApp.Views
         public HomePage()
         {
             InitializeComponent();
+            // Add event handler
+            voiceButton.OnTextChanged += (txt) => {
+                convertedText.Text = txt;
+            };
         }
 
-        //private void endVoiceButton_Clicked(object sender, EventArgs e)
-        //{
-
-        //}
         public void OnStart(object sender, EventArgs e)
         {
             convertedText.Text = "Started Recording";

@@ -46,6 +46,7 @@
     <Compile Include="Views\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\VoiceButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">

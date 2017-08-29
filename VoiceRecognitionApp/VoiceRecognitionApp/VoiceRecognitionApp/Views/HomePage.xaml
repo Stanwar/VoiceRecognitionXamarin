@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:VoiceRecognitionApp.Views;assembly=VoiceRecognitionApp"
              x:Class="VoiceRecognitionApp.Views.HomePage"
              Title="Voice Recognition System">
     <ContentPage.Content>
@@ -15,6 +16,7 @@
             </Editor>
             <Button x:Name="startVoiceButton" Text="Record" IsVisible="true" Clicked="OnStart"/>
             <Button x:Name="endVoiceButton" Text="Stop" IsVisible="true" Clicked="OnStop"/>
+            <local:VoiceButton x:Name="voiceButton" Text="Record Voice" IsVisible="true" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

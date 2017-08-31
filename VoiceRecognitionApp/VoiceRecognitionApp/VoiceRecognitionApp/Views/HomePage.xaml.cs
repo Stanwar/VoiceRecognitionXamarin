@@ -30,5 +30,11 @@ namespace VoiceRecognitionApp.Views
         {
             convertedText.Text = "End Recording";
         }
+
+        public void GoHome(object sender, EventArgs e)
+        {
+            NavigationPage page = new NavigationPage(new VoiceRecognitionApp.MainPage());
+            App.Current.MainPage = page;
+        }
     }
 }

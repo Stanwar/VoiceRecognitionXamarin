@@ -63,9 +63,8 @@ namespace VoiceRecognitionApp.Droid
                 {
                     // no microphone, no recording. Disable the button and output an alert
                     var alert = new AlertDialog.Builder(Context);
-                    alert.SetTitle("You don't seem to have a microphone to record with");
+                    alert.SetTitle("No microphone detected.");
                     alert.SetPositiveButton("OK", (sender, e) => {
-
                         return;
                     });
 
@@ -78,7 +77,7 @@ namespace VoiceRecognitionApp.Droid
                     voiceIntent.PutExtra(RecognizerIntent.ExtraLanguageModel, RecognizerIntent.LanguageModelFreeForm);
 
                     // put a message on the modal dialog
-                    voiceIntent.PutExtra(RecognizerIntent.ExtraPrompt, "Speak now!");
+                    voiceIntent.PutExtra(RecognizerIntent.ExtraPrompt, "Speak Up!");
 
                     // if there is more then 1.5s of silence, consider the speech over
                     voiceIntent.PutExtra(RecognizerIntent.ExtraSpeechInputCompleteSilenceLengthMillis, 1500);

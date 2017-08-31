@@ -6,6 +6,6 @@
 
     <StackLayout>
         <Label Text="This is mCase!" />
-        <Button x:Name="gotoHomePageButton" Text="Record" IsVisible="true" Clicked="OnClickHome"/>
+        <Button x:Name="gotoHomePageButton" Text="Goto Recording Center" IsVisible="true" Clicked="OnClickHome"/>
     </StackLayout>
 </ContentPage>

@@ -19,6 +19,15 @@ namespace VoiceRecognitionApp.Views
             voiceButton.OnTextChanged += (txt) => {
                 convertedText.Text = txt;
             };
+
+#if __ANDROID__
+            voiceButton.IsVisible = true;
+#endif
+
+#if __IOS__
+            startVoiceButton.IsVisible = true;
+            endVoiceButton.IsVisible = true;
+#endif
         }
 
         public void OnStart(object sender, EventArgs e)

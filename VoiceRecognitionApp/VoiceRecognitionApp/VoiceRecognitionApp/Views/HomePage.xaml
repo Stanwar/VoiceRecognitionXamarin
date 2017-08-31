@@ -14,9 +14,14 @@
                                 Android="#2c3e50"/>-->
                 </Editor.BackgroundColor>
             </Editor>
-            <!--<Button x:Name="startVoiceButton" Text="Record" IsVisible="true" Clicked="OnStart"/>
-            <Button x:Name="endVoiceButton" Text="Stop" IsVisible="true" Clicked="OnStop"/>-->
+            <!-- IOS Specific buttons -->
+            <Button x:Name="startVoiceButton" Text="Record" IsVisible="true" Clicked="OnStart"/>
+            <Button x:Name="endVoiceButton" Text="Stop" IsVisible="true" Clicked="OnStop"/>
+            
+            <!-- Android Specific buttons -->
             <local:VoiceButton x:Name="voiceButton" Text="Record Voice" IsVisible="true" />
+            
+            <!-- Home Navigation -->
             <Button x:Name="goHomeButton" Text="Go Home" IsVisible="true" Clicked="GoHome"/>
         </StackLayout>
     </ContentPage.Content>

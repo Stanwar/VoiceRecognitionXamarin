@@ -48,5 +48,7 @@
     </array>
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>Perform speech-to-text on your recorded audio clips</string>
   </dict>
 </plist>
